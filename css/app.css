@@ -1,0 +1,784 @@
+/* global */
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #F5FBFE;
+}
+.page{
+    max-width: 1980px;
+    margin: 0 auto;
+}
+
+.page h4{
+    font-size: 14px;
+    font-weight: 200;
+    padding: 5px 15px;
+    color: black;
+}
+
+/* global */
+/* header */
+.header{
+    max-width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-top: 30px;
+    display: block;
+    align-items: center;
+
+}
+
+.logo{
+    float: left;
+    display: block;
+    width: 116px;
+    height: 16px;
+    background-image: url(../img/logo.svg);
+    margin-right: 20px;
+}
+
+nav{
+    float: right;
+    align-items: center;
+    font-size: 18px;
+    line-height: 24px;
+    display: inline;
+}
+nav p{
+    margin-right: 15px;
+    font-style: normal;
+    font-weight: 300;
+    display: inline;
+    float: left;
+
+}
+nav p a{
+    text-decoration: none;
+    color: #202020;
+    font-weight: 400;
+    margin-right: 45px;
+}
+
+
+.dropbtn {
+    background-color: #F5FBFE;
+    cursor: pointer;
+    font-size: 18px;
+    border: 2px solid #DBE4E8;
+    border-radius: 15px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 14px;
+    margin: -1px -1px -1px -1px;
+    max-width: 100px;
+    float: left;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    bottom: 10px;
+}
+.dropbtn i{
+    margin-left: 30px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color:#F5FBFE;
+    border-radius: 15px ;
+    -webkit-border-radius: 15px ;
+    -moz-border-radius: 15px ;
+    -ms-border-radius: 15px ;
+    -o-border-radius: 15px ;
+}
+
+.dropdown-content {
+    display: none;
+    text-align: left;
+    background-color: #DBE4E8;
+    position: relative;
+    right: 24px;
+    border-top: 1px solid #DBE4E8;
+    border-radius: 15px;
+    top: 13px;
+    color: rgb(0, 0, 0);
+    padding: 6px 25px;
+    margin: -1px -1px -1px -1px;
+    width: 100px;
+    height: 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    text-align: left;
+
+    
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #DBE4E8;
+    border-radius: 15px;
+}
+
+.show {
+    display: block;
+}
+
+/* header */
+/* main */
+
+.wrap{
+    text-align: left;
+    margin: 50px auto;
+    position: relative;
+    max-width: 880px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.wrap h1{ 
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    margin-bottom: 15px;
+    line-height: 87px;
+    color: #062E41;
+    margin-top: 160px;
+}
+.wrap h2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+/* filereader */
+
+
+.drop-area {
+    border: 3px dashed #DBE4E8;
+    border-radius: 20px;
+    box-sizing: border-box;
+    max-width: 844px;
+    height: 343px;
+    margin-top: 54px;
+    margin-bottom: 90px;
+    padding: 20px;
+    background: white;
+    z-index: 1;
+}
+/* messages */
+.file_deleted{
+    border: 3px solid #DBE4E8;
+    border-radius: 20px;
+    box-sizing: border-box;
+    max-width: 844px;
+    height: 343px;
+    margin-top: 54px;
+    margin-bottom: 90px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    display: none;
+}
+
+.file_error{
+    border: 3px solid #DBE4E8;
+    border-radius: 20px;
+    box-sizing: border-box;
+    max-width: 844px;
+    height: 343px;
+    margin-top: 54px;
+    margin-bottom: 90px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    display: none;
+}
+
+.file_format{
+    border: 3px solid #DBE4E8;
+    border-radius: 20px;
+    box-sizing: border-box;
+    max-width: 844px;
+    height: 343px;
+    margin-top: 54px;
+    margin-bottom: 90px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    display: none;
+    color: red;
+}
+
+.file_pages{
+    border: 3px solid #DBE4E8;
+    border-radius: 20px;
+    box-sizing: border-box;
+    max-width: 844px;
+    height: 343px;
+    margin-top: 54px;
+    margin-bottom: 90px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    display: none;
+}
+.file_pages  img,
+.file_format  img,
+.file_error  img,
+.file_deleted img{
+    margin-bottom: 26px;
+    margin-top: 43px;
+}
+.file_pages h2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    color: red;
+}
+.file_deleted h2,
+.file_pages  h2,
+.file_format  h2,
+.file_error h2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.start_btn{
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    border: 2px solid #DBE4E8;
+    border-radius: 15px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 6px 14px;
+    margin: -1px -1px -1px -1px;
+    max-width: 140px;
+    height: 50px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    text-align: left;
+    overflow: hidden;
+}
+.loaded{
+    border: 3px solid #DBE4E8;
+    border-radius: 20px;
+    box-sizing: border-box;
+    max-width: 844px;
+    height: 343px !important;
+    margin-top: 54px;
+    margin-bottom: 90px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    display: none;
+    min-width: 320px;
+}
+.loaded h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #396174;
+    float:left;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.pdf_img{
+    float: left;
+    position: relative;
+    right: 320px;
+    top: 80px;
+}
+.file_name{
+    left: 40px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #083A51;
+    position: relative;
+    margin-top: 100px;
+    
+}
+.file_size{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #083A51;
+    position: relative;
+    margin-right: 220px;
+    bottom: 0px;
+    margin-top: 100px;
+    float: right;
+}
+.delete img{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+.delete{
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    border: 2px solid #DBE4E8;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    padding: 6px 14px;
+    margin:-12px -1px -1px -1px;
+    max-width: 90px !important;
+    height: 50px;
+    text-align: left;
+    float: right;
+    margin-right: 150px !important;
+    position: relative;
+    bottom: 28px;
+
+}
+.reload_btn{
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    border: 2px solid #DBE4E8;
+    border-radius: 15px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 25px;
+    margin: -1px -1px -1px -1px;
+    max-width: 90px !important;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 78px;
+   margin-left: 600px;
+   margin-right: 50px;
+   position: relative;
+   float: right;
+   
+}
+
+
+.reader{
+    padding: 14px 37px;
+    background: #42C5CA;
+    cursor: pointer;
+    border-radius: 22px;
+    color: white;
+    border: none;
+    float: right;
+    margin-right: 40px;
+    position: relative;
+    bottom: 20px;
+
+}
+
+.done{
+    border: 3px solid #DBE4E8;
+    border-radius: 20px;
+    box-sizing: border-box;
+    max-width: 844px;
+    height: 459px;
+    margin-top: 54px;
+    margin-bottom: 90px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    display: none;
+}
+
+.done h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #396174;
+    float:left;
+    margin-left: 80px;
+    margin-top: 12px;
+}
+
+.done h3 img{
+    position: relative;
+    top: 10px;
+}
+
+.ppdf{
+    float: left;
+    margin-top: 80px;
+    position: relative;
+    right: 438px;
+}
+.info{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6B8997;
+    float: left;
+    text-align: left;
+    margin-left: 93px;
+    position: relative;
+    bottom: 40px;
+    position: relative;
+    right: 360px;
+    top: 50px;
+}
+#copy {
+    position: relative;
+    right: 1000000px;
+}
+.done h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    color: #083A51;
+    float: left;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 80px;
+}
+.file_names{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #052331;
+    position: relative;
+    left: 100px;
+    margin-top: -40px !important;
+    
+}
+.file_sizes{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #052331;
+    position: relative;
+    bottom: 50px;
+    margin-left: 270px !important;
+    float: right;
+    left: 380px;
+}
+#reload_file{
+    display: none;
+}
+
+.done a{
+    text-decoration-line: underline;
+    color: #42C5CA;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+}
+.cont{
+    position: relative;
+    right: 40px;
+    bottom: 10px;
+}
+.Dowload_btn a{
+    text-decoration:none;
+    color: #fcfcfc;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+}
+button.Dowload_btn{
+    cursor: pointer;
+    font-size: 18px;
+    margin: 2px -1px -1px -1px;
+    width: 70px !important;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 188px !important;
+    padding: 14px 0px;
+    background: #42C5CA;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    text-align: center !important;
+    justify-content: left !important;
+    float: right;
+
+}
+
+.back_in_start{
+    
+    position: relative;
+    
+}
+
+.link_btn{
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    border: 2px solid #DBE4E8;
+    border-radius: 15px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 6px 15px;
+    margin: 2px -1px -1px -1px;
+    width: 70px !important;
+    height: 50px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    right: 15px;
+    float: right;
+
+}
+
+/* messages */
+/* progress */
+.progress_bar,
+.switch_bar{
+    border: 3px solid #DBE4E8;
+    border-radius: 20px;
+    box-sizing: border-box;
+    max-width: 844px;
+    height: 343px;
+    margin-top: 54px;
+    margin-bottom: 90px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    display: none;
+}
+
+.progress_bar img,
+.switch_bar img{
+    color: #396174;
+    margin-bottom: 26px;
+    margin-top: 43px;
+}
+.progress_bar h2,
+.switch_bar h2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+progress {
+    border:0;
+    height: 25px;
+    border-radius: 40px;
+    background: #f1f1f1;
+}
+progress::-webkit-progress-bar {
+    max-width: 408px !important;
+    height: 25px;
+    border-radius: 40px;
+    background: #f1f1f1;
+}
+progress::-webkit-progress-value{
+    border-radius: 40px;
+    background: #42C5CA;
+}
+progress::-moz-progress-bar
+{
+    border-radius: 40px;
+    background: #42C5CA;
+}
+#progressbar2{
+    width: 408px ;
+    border-radius: 40px;
+}
+#progressbar1{
+    width: 408px ;
+    border-radius: 40px;
+}
+/* progress */
+.drop-area--over{
+    border-style: solid;
+}
+.my-form {
+    text-align: center;
+}
+
+.my-form img{
+    margin-bottom: 26px;
+}
+
+.my-form h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.my-form p{
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+.my-form h4{
+    color: #6B8997;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 40px;
+
+}
+
+.button {
+    /* max-width: 188px;
+    height: 50px; */
+    padding: 14px 37px;
+    background: #42C5CA;
+    cursor: pointer;
+    border-radius: 22px;
+    color: white;
+}
+.button:hover {
+    background: #1FB2B8;
+}
+
+#fileElem {
+    display: none;
+}
+
+
+/* filereader */
+
+
+/* pdf_info */
+.HelpInstruction{
+    max-width: 850px;
+}
+
+.HelpInstruction h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 55px;
+}
+.helpDescriptionText{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.number{
+    width: 41px;
+    height: 41px;
+    border: 2.5px solid #42C5CA;
+    box-sizing: border-box;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 24px;
+    padding: 3px;
+    color: #42C5CA;
+    margin-right: 20px;
+    float: left;
+}
+.helpDescription{
+    margin-bottom: 40px;
+}
+
+/* pdf_info */
+
+
+/* advantages */
+
+.benefits{
+    max-width: 850px;
+    margin-top: 91px;
+}
+
+.benefits img{
+    margin-bottom: 28px;
+}
+.first, .second{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.benefit{
+    flex-grow: 1;
+    max-width: 33%;
+    text-align: center;
+}
+.TitleBenefit{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+.textbenefit{
+    max-width: 261px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 10px;
+}
+.benefit img{
+    height: 20%;
+}
+.madein{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #083A51;
+    /* text-align: right;
+    padding-right: 100px; */
+    float: right;
+    margin-right: 340px !important;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to scan</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/app.css?1">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <script src="https://kit.fontawesome.com/e95ce635da.js" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="css/media.css?1">
+    <script src="js/api_en.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <a href="" class="logo">
+                <img class="logo_img">
+            </a>
+            <nav>
+                <p id="Feedback"></p>
+                <p>
+                    <a href="mailto:pdftoscan@example.com" class="nav_mail" id="Email"></a>
+                </p>
+
+                <button class="dropbtn" onclick="myFunction()">EN<i class="fas fa-caret-down"></i>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="index.html">RU</a>
+
+                    </div>
+                </button>
+
+
+            </nav>
+        </div>
+
+        <div class="wrap">
+            <h1 id="MainTitle"></h1>
+            <p1 id="Description"></p1>
+        </div>
+        <div class="drop-area" id="dropzone">
+            <form class="my-form">
+                <img src="img/cloud-upload-outline.svg">
+                <h3>Drag the PDF file here</h3>
+                <p>or</p>
+                <input type="file" id="fileElem" multiply class="dropzone" name="file">
+                <label class="button" for="fileElem">
+                    <bg>Select a file</bg>
+                </label>
+                <h4>The maximum number of pages in a file is 15</h4>
+            </form>
+        </div>
+        <div class="file_deleted" id="file_deleted">
+            <img src="img/brosh.svg" alt="">
+            <h2>The downloaded file was deleted</h2>
+            <button class="start_btn" id="start_btn" onclick="hideme(this)">Back</button>
+        </div>
+        <div class="file_format" id="file_format">
+            <img src="img/format.svg" alt="">
+            <h2>Wrong format of the file <br>
+                Please download the PDF file</h2>
+            <button class="start_btn" id="start_btn" onclick="hideme(this)">Repeat
+            </button>
+        </div>
+        <div class="file_pages" id="file_pages">
+            <img src="img/pages.svg" alt="">
+            <h2>File too large<br>
+                The size of the uploaded document - no more than 15 pages</h2>
+            <button class="start_btn" id="start_btn" onclick="hideme(this)">Repeat
+            </button>
+        </div>
+        <div class="file_error" id="file_error">
+            <img src="img/error.svg" alt="">
+            <h2>Unfortunately, when you download a file failed<br>
+                Please try again</h2>
+            <button class="start_btn" id="start_btn" onclick="hideme(this)">Repeat
+            </button>
+        </div>
+
+        <div class="progress_bar">
+            <img src="img/loader.svg" alt="">
+            <h2>Download file</h2>
+            <progress id="progressbar1" value="0" max="100"></progress>
+
+        </div>
+        <div class="loaded">
+            <h3>File download completed successfully</h3>
+            <br>
+
+
+            <p>
+                <img src="img/pdf.svg" alt="" class="pdf_img">
+            <h4 class="file_size"></h4>
+            <h1 class="file_name"></h1>
+
+
+            <p><button class="delete"><img src="img/brosh.svg" alt=""></button>
+
+            <form class="form" action="" method="post" enctype="multipart/form-data">
+
+
+                <input type="file" accept="application/pdf" name="File" required id="reload_file">
+
+                <input type="text" name="id" style="display: none;" id="ids">
+                <label class="reload_btn" for="reload_file"><img src="img/oven.svg" alt=""></label>
+            </form>
+            </p>
+            </p>
+            <br>
+
+
+            <button class="reader">Преобразовать</button>
+        </div>
+
+        <div class="switch_bar">
+            <img src="img/magic.svg" alt="">
+            <h2>Convert your PDF file to a scanned document</h2>
+            <progress id="progressbar2" value="20" max="100"></progress>
+
+        </div>
+
+        <div class="done">
+            <h3> <img src="img/all.svg" alt=""> File conversion successfully completed</h3>
+            <br>
+
+            <img src="img/pdf.svg" alt="" class="ppdf">
+
+
+            <h1 class="file_names"></h1>
+            <h3 class="file_sizes"></h3>
+            <p class="info">Download link available <br>
+                within 30 minutes</p>
+
+
+
+
+
+            <button class="Dowload_btn">
+                <a id="Dow" download target="_blank">
+                    Download
+                </a>
+            </button>
+
+            <input type="text" name="copy" id="copy">
+
+            <button onclick="Myfunc()" class="link_btn"><img src="img/link.svg" alt=""></button>
+
+
+
+            <br>
+            <h1 class="back_in_start">Are there any other files to convert? <br>
+                Then you can <a href="" class="back">go to download page</a></h1>
+
+
+
+        </div>
+
+        <div class="HelpInstruction">
+            <h2 id="HelpTitle"></h2>
+            <div class="helpDescription">
+                <div class="number">1</div>
+                <div class="helpDescriptionText" id="HelpDescription1"></div>
+            </div>
+            <div class="helpDescription">
+                <div class="number">2</div>
+                <div class="helpDescriptionText" id="HelpDescription2">
+                </div>
+            </div>
+            <div class="helpDescription">
+                <div class="number">3</div>
+                <div class="helpDescriptionText" id="HelpDescription3"></div>
+            </div>
+        </div>
+        <div class="benefits">
+            <div class="first">
+                <div class="benefit">
+                    <img src="img/scanner1.svg" alt="" id="UrlImage1">
+                    <h6 class="TitleBenefit" id="TextTitle1"></h6>
+                    <p class="textbenefit" id="TextDescription1">
+
+                    </p>
+                </div>
+                <div class="benefit">
+                    <img src="img/blocks.svg" alt="" id="UrlImage2">
+                    <h6 class="TitleBenefit" id="TextTitle2"></h6>
+                    <p class="textbenefit" id="TextDescription2">
+                    </p>
+                </div>
+                <div class="benefit">
+                    <img src="img/lock.svg" alt="" id="UrlImage3">
+                    <h6 class="TitleBenefit" id="TextTitle3"></h6>
+                    <p class="textbenefit" id="TextDescription3">
+
+                    </p>
+                </div>
+            </div>
+            <div class="second">
+                <div class="benefit">
+                    <img src="img/doc.svg" alt="" id="UrlImage4">
+                    <h6 class="TitleBenefit" id="TextTitle4"></h6>
+                    <p class="textbenefit" id="TextDescription4">
+                    </p>
+                </div>
+                <div class="benefit">
+                    <img src="img/like.svg" alt="" id="UrlImage5">
+                    <h6 class="TitleBenefit" id="TextTitle5"></h6>
+                    <p class="textbenefit" id="TextDescription5">
+
+                    </p>
+                </div>
+                <div class="benefit">
+                    <img src="img/share.svg" alt="" id="UrlImage6">
+                    <h6 class="TitleBenefit" id="TextTitle6">
+                    </h6>
+                    <p class="textbenefit" id="TextDescription6">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="madein">Made in Softlex</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

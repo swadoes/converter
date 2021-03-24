@@ -1,0 +1,469 @@
+@media(max-width: 840px){
+  .loaded{
+
+    height: 387px !important;
+    margin-left: 20px;
+    margin-right: 20px;
+  
+  }
+  
+  .loaded h3{
+    float: none;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .pdf_img{
+    float: none;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    right: 0px;
+    top: 0px;
+  }
+  .file_name{
+    float: none;
+    text-align: center;
+    justify-content: center;
+    right: 0px;
+    margin-top: -20px;
+    margin-left: 0;
+    bottom: 0;
+    left: 0px;
+  
+  }
+  .file_size{
+  
+    margin-right: 0px;
+    bottom: 0px;
+    margin-top: 0px;
+    top: 40px;
+    float: none;
+  }
+  
+  .delete{
+      top: 60px;
+      bottom: 0px;
+      float: none;
+      margin-right: 100px !important;
+      position: relative;
+  }
+  .reload_btn{
+   
+    margin: -1px -1px -1px -1px;
+    position: relative;
+    bottom: -21px;
+    margin-left: 80px;
+    position: relative;
+    float: none;
+   
+  }
+  
+  
+  .reader{
+  
+    float: none;
+    margin-right: 0px;
+    position: relative;
+    bottom: -50px;
+  
+  }
+
+  /* 123 */
+
+  .done{
+    box-sizing: border-box;
+    height: 560px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.done h3{
+    font-size: 14px;
+    float:none;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+
+.ppdf{
+    float: none;
+    margin-top: 20px;
+    right: 0px;
+
+}
+.info{
+
+    float: none;
+    margin-left: 0px !important;
+    left: 0px;
+    bottom: 0px;
+    position: relative;
+    right: 60px;
+    top: 150px;
+    text-align: center;
+}
+
+.done h1{
+    float: none;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+}
+.file_names{
+  
+    position: relative;
+    font-size: 14px;
+    float: none ;
+    left: 0;
+    position: relative;
+    margin-left: 10px !important;
+    margin-top: -20px !important;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    top: 40px;
+
+}
+.file_sizes{
+  bottom: 0px;
+    margin-right: 0px;  
+    left: 5px;
+    float: none;
+    margin-top: 40px !important;
+    margin-left: 0px !important;
+}
+
+
+
+button.Dowload_btn{
+    float: none;
+    
+    position: relative;
+    margin-right: 0px !important;
+    left: 194px;
+    top: 30px;
+}
+
+
+.back_in_start{
+    font-size: 16px;
+    position: relative;
+    text-align: center !important;
+    justify-content: center !important;
+    margin-top: 100px !important;
+    margin-left: 50px !important;
+}
+
+.link_btn{
+    width: 190px !important;
+    text-align: center;
+    position: relative;
+    right: 185px;
+    float: none;
+    bottom: 20px;
+}
+}
+
+
+@media (max-width: 740px) {
+  .logo_img,
+  .logo{
+    float: left !important;
+    position: relative;
+    right:70px;
+    margin-right: 0;
+  }
+  #HelpTitle{
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #Email,
+  #Feedback{
+    display: none;
+  }
+  #progressbar2{
+    max-width: 500px !important;
+}
+  #MainTitle{
+    font-size: 34px;
+  }
+
+  #Description{
+    font-size: 16px;
+  }
+
+  .wrap{
+
+    margin: 0 !important;
+
+}
+.wrap h1{ 
+  margin-bottom: 0;
+  margin-top: 70px;
+}
+.drop-area {
+  padding-top: 60px;
+  margin-top: 45px;
+  margin-bottom: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 180px;
+  border: 3px solid #DBE4E8;
+}
+.drop-area h3, 
+.drop-area p ,
+.drop-area img{
+  display: none;
+}
+.first,
+.second{
+  display: block;
+  max-width: 100%;
+  flex-wrap: nowrap ;
+}
+.benefits{
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+.benefit{
+  max-width: 100%;
+  flex-grow: 0;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.textbenefit{
+  max-width: 420px;
+  margin-bottom: 50px;
+}
+.helpDescriptionText{
+  font-size: 14px;
+}
+.madein{
+
+  text-align:center;
+
+  float: none;
+  margin-right: 0 !important;
+}
+
+
+
+
+
+.file_deleted{
+  height: 180px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.file_error{
+  height: 180px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.file_format{
+  height: 180px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.file_pages{
+  height: 180px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+
+}
+.file_deleted img,
+.file_pages img,
+.file_format img,
+.file_error img{
+  display: none;
+}
+.number{
+  margin-left: 20px;
+}
+.helpDescriptionText{
+  max-width: 500px;
+  margin-right: 22px;
+  text-align:left;
+}
+
+
+
+
+/* progress */
+.progress_bar,
+.switch_bar{
+    height: 180px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.progress_bar img,
+.switch_bar img{
+    margin-bottom: 8px;
+    margin-top: 0px;
+    width: 35px;
+    height: 35px;
+}
+.progress_bar h2,
+.switch_bar h2{
+  margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+#progressbar2{
+  width: 408px ;
+}
+#progressbar1{
+  width: 408px ;
+}
+
+
+}
+@media (max-width: 653px){
+  button.Dowload_btn{
+    left: 94px;
+    top: 30px;
+}
+.link_btn{
+
+    right: 0px;
+    bottom: 80px;
+}
+
+
+.back_in_start{
+  margin-top: 60px !important;
+  margin-left: 0px !important;
+}
+}
+@media (max-width:530px){
+  #progressbar2{
+    width: 308px ;
+  }
+  #progressbar1{
+    width: 308px ;
+  }
+}
+
+@media (max-width: 470px){
+  .helpDescriptionText{
+    max-width: 350px;
+    margin-right: 20px;
+
+  }
+  .number{
+    margin-right: 0;
+  }
+  #progressbar2{
+    width: 258px ;
+  }
+  #progressbar1{
+    width: 258px ;
+  }
+
+
+  
+  .loaded h3{
+
+    font-size: 14px;
+  }
+
+  .file_name{
+    font-size: 14px;
+  
+  }
+  .file_size{
+  
+    font-size: 14px;
+  }
+  
+
+  
+  .reader{
+  
+
+    bottom: -35px;
+  }
+}
+
+
+@media (max-width:465px){
+  button.Dowload_btn{
+    left: 0px !important;
+    top: 30px;
+    margin-left: 10px;
+}
+.link_btn{
+
+  right: 88px !important;
+  bottom: 80px;
+}
+
+.info{
+  top: 120px !important;
+}
+.back_in_start{
+    margin-top: 25px !important;
+    margin-left: 1px !important;
+}
+
+
+}
+
+@media (max-width:462px){
+  button.Dowload_btn{
+    left: 94px;
+    top: 30px;
+}
+.link_btn{
+
+    right: -8px !important;
+    bottom: 100px;
+}
+
+}
+@media (max-width: 419px){
+  .helpDescriptionText{
+    max-width: 300px;
+    
+  }
+  .back_in_start{
+    margin-top: 0px !important;
+    margin-left: 1px !important;
+}
+
+.ppdf{
+  float: none;
+  margin-top: 0px;
+  right: 0px;
+
+}
+}
+
+@media (max-width: 370px){
+  .helpDescriptionText{
+    max-width: 230px;
+  }
+
+  #progressbar2{
+    width: 208px ;
+}
+#progressbar1{
+    width: 208px ;
+}
+}
+
